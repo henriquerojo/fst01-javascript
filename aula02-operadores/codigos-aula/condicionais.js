@@ -40,3 +40,9 @@ else
 {
     console.log("Você é F######");
 }
+
+// estrutura condicional ternário
+
+// if ternário
+let resultado = (idade < 18) ? "DIMENÓ" : "DIMAIÓ";
+console.log(resultado);
