@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01-while</title>
+</head>
+<body>
+    <script>
+        // estrutura de repetição while
+        let qtdProduto = 0;
+        while (qtdProduto <= 10) 
+        {
+            qtdProduto++;
+
+            if (qtdProduto == 3 || qtdProduto == 5) 
+            {
+                continue; // modificador de fluxo    
+            }
+
+            if (qtdProduto == 7) 
+            {
+                break; // outro modificador de fluxo
+            }
+
+            console.log(qtdProduto);
+        }
+    </sc/ript>
+</body>
+</html>

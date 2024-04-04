@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do While</title>
+</head>
+<body>
+    <script>
+        let contador = 20;
+        do 
+        {
+            // faça alguma coisa aqui
+            console.log(`Produto ${contador}`);
+            contador++;
+        } 
+        while (contador < 3);
+        
+        // desafio 1: como fazer para ir de 10 até 0
+        let contador2 = 10;
+        while (contador2 >= 0) 
+        {
+            console.log(contador2);
+            contador2--;
+        }
+        // desafio 2: como eu faço para verificar se o usuário digitou errado
+        let verificar = 0;
+        verificar = prompt("Digite um número: ");
+        while (verificar != 1) 
+        {
+            alert("Por favor, digite um valor válido.");
+            verificar = prompt("Digite um número: ");    
+        }
+        alert("Verificação feita.");
+        let num = Number(prompt("Adivinhe um número entre 0 e 10"));
+        while (num != 7) 
+        {
+            num = +prompt("ERROU! Adivinhe um número entre 0 e 10");
+        }
+        console.log("Parabéns, você acertou!");
+    </script>
+</body>
+</html>
