@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // for indexado ou for clássico
+        for (let contador = 0; contador < 3; contador++) 
+        {
+            console.log(`Contador: ${contador}`);   
+        }
+
+         // lista -- array 
+         let frutas = ["Maçã", "Banana", "Pitaia"];
+         console.log(frutas);
+         console.log(frutas[2]);
+
+        //manipular os arrays
+
+        //percorrendo arrays
+        let quantidadeFrutas = frutas.length; //3
+        console.log(quantidadeFrutas);
+        console.log(" ------ ")
+        for (let i = 0; i < quantidadeFrutas; i++)
+        {
+            console.log(`Posição: ${i} | Valor: ${frutas[i]}`);
+        }
+        //for in --- ecmascript
+        for (let posicao in frutas)
+        {
+            console.log(posicao, frutas[posicao]);
+        }
+        //for of
+        for(let fruta of frutas)
+        {
+            console.log(frutas.indexOf(fruta), fruta);
+        }
+        console.log(frutas.indexOf("Maçã"));
+        let gradeProdutos = [
+            ["Martelo", 10.40, 2],
+            ["Alicate", 37.97, 8]
+        ];
+        let linha = 0;
+        let coluna = 0;
+        console.log(gradeProdutos[linha][coluna]);
+        console.log("");
+        console.log("");
+        for (linha = 0; linha < gradeProdutos.length; linha++)
+        {
+            // console.log(linha);
+            // console.log(gradeProdutos[linha]);
+            for (coluna = 0; coluna < gradeProdutos[linha].length; coluna++) 
+            {
+                console.log(gradeProdutos[linha][coluna]);
+            }
+            console.log("--------- SEPARA ----------");
+        }
+    </script>
+</body>
+</html>

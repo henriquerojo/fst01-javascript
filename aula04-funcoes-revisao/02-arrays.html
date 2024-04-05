@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <script>
+        let artistas = ["Pablão", "Jojo", "MC Pipokinha"];
+        // inserir novo elemento no final do array
+        artistas.push("MC Daleste");
+        console.log(artistas);
+
+        // inserir novo elemento no começo do array
+        artistas.unshift("Falcão");
+        console.log(artistas);
+
+        // remover o último elemento do array
+        artistas.pop();
+        console.log(artistas);
+
+        // remover o primeiro elemento do array
+        artistas.shift();
+        console.log(artistas);
+
+        console.log(" --- ")
+        let artistasDeVerdade = ["Silvio Santos", "Slash"];
+        console.log(artistasDeVerdade);
+
+        let artistasJuntos = artistas.concat(artistasDeVerdade);
+        console.log(artistasJuntos);
+
+        let retorno = artistasJuntos.splice(0, 3);
+        console.log(retorno);
+        console.log(artistasJuntos);
+    </script>
+</body>
+</html

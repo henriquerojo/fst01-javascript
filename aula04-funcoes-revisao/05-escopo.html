@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESCOPO</title>
+</head>
+<body>
+    <script>
+        // escopos de função
+        // escopo global
+        var nomeGlobal = "Alexandre VAR GLOBAL";
+        console.log(nomeGlobal);
+        let nomeGlobalLet = "LET GLOBAL";
+        console.log(nomeGlobalLet);
+        function um() 
+        {
+            var nomeUm = "VAR UM";
+            let nomeUmLet = "LET UM";
+
+            function dois() 
+            {
+                // let nomeDoisVar = "LET VAR"
+                // let nomeDoisLet = "LET DOIS"
+                if (true) 
+                {
+                    var idade = 2;    
+                }
+                console.log(idade);
+            }
+
+            // console.log(nomeDois);
+
+            dois();
+        }
+
+        um();
+       
+    </script>
+</body>
+</html>
