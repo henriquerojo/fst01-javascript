@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For-EACH</title>
+</head>
+<body>
+    <script>
+        // lista
+        let lista = [10, 20, 30, 40];
+
+        // for each é uma outra maneira de percorrer arrays
+        // para cada
+        // sintaxe:
+
+        function funcArray(valor, indice, listaParam)
+        {
+            console.log(`valor: ${valor} | indice: ${indice} | lista: ${listaParam}`);          
+        }
+        // lista.forEach(funcArray);
+
+        // lista.forEach(function (v, i, arr) 
+        // {
+        //     console.log(`${v}, ${i}, [${arr}]`);
+        // })
+        // desafio = como salvar retornos do foreach (por ex.: multiplicar cada valor da lista por 2 e salvar esses valores em uma nova lista)
+        lista.forEach( (v, i, arr) => 
+        {
+            console.log(`${v}, ${i}, [${arr}]`);
+        })
+    </script>
+</body>
+</html>

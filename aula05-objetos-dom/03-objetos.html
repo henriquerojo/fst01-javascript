@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos</title>
+</head>
+<body>
+    <script>
+        // como fazíamos com a lista...
+        // let pessoa = ["Henrique", 20];
+        // pessoa[0] = "Henrique";
+        // pessoa[1] = 20;
+        // console.log(pessoa[0]);
+
+        // declaração de um objeto --json-- javascript object notation
+
+        // atributos: nome, idade, altura, interesses
+        // métodos: envelhecer
+        // objeto: pessoa
+        let pessoa = 
+        {
+            nome: "Alexandre",
+            idade: 24,
+            altura: 169,
+            interesses: ["Series", "Bike", "Correr", "Viajar"],
+            envelhecer: function()
+            {
+                this.idade++;
+            }
+        }
+
+        //acessando as informações/valores do objeto
+
+        console.log(pessoa);
+        pessoa.envelhecer();
+        console.log(pessoa);
+        // console.log(pessoa["nome"]);
+        // console.log(pessoa.nome);
+        // console.log(pessoa.idade);
+        // console.log(pessoa.envelhecer());
+
+        //percorrendo objetos (for in)
+        for (let key in pessoa) 
+        {
+            console.log(pessoa[key]);
+        }
+
+        // percorrendo lista de interesses dentro do objeto
+        console.log(pessoa.interesses);
+        for (let interesse of pessoa.interesses)
+        {
+            console.log(interesse);
+        }
+        // lista de objetos (lista de produtos)
+        let produto1 = 
+        {
+            "preco": 20,
+            "modelo": "Arno"
+        }
+        console.log(produto1);
+        let listaProdutos = [produto1];
+
+        let produto2 = 
+        {
+            preco: 10,
+            modelo: "Sadia"
+        }
+
+        listaProdutos.push(produto2);
+        console.log(listaProdutos);
+    </script>
+</body>
+</html>
